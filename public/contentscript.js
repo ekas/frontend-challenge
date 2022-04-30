@@ -27,6 +27,26 @@ element.style.cursor = 'pointer';
 element.style.display = 'flex';
 element.style.alignItems = 'center';
 
+element.addEventListener(
+  'mouseover',
+  function () {
+    imgElement.style.backgroundColor = '#1C1F33';
+    element.style.backgroundColor = 'white';
+    element.style.color = '#1C1F33';
+  },
+  false,
+);
+
+element.addEventListener(
+  'mouseleave',
+  function () {
+    imgElement.style.backgroundColor = 'transparent';
+    element.style.backgroundColor = '#1C1F33';
+    element.style.color = 'white';
+  },
+  false,
+);
+
 const parentElement = document.querySelector(
   '#root > div > div > div.makeStyles-mainPanel-3 > div.makeStyles-scrollbars-5 > div:nth-child(1) > div > section > div:nth-child(2) > h2',
 );
