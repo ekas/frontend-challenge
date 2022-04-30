@@ -1,4 +1,5 @@
 import star from '@assets/img/star.svg';
+import sustainability from '@assets/img/sustainability.svg';
 import { GeneralOverviewCard } from '@components/user/dashboard/GeneralOverviewCard';
 import { MonthlyBarOverview } from '@components/user/dashboard/MonthlyBarOverview';
 import { Grid, Theme, useTheme } from '@mui/material';
@@ -87,7 +88,17 @@ export const UserDashboardView = (): ReactElement => {
             totalUser={totalRewards.total_rewards_user}
           />
         </Grid>
-        <Grid item xs={12} md={6}></Grid>
+        <Grid item xs={12} md={6}>
+          <GeneralOverviewCard
+            cardTitle="Total CO2 Rewards"
+            colors={[theme.custom.palette.graphColorTwo.main, theme.custom.palette.graphColorTwo.light]}
+            unit="Kg"
+            icon={sustainability}
+            monthlyUser={totalRewards.dateframe_co2_user}
+            monthlyCompany={totalRewards.dateframe_co2_company}
+            totalUser={totalRewards.total_co2_user}
+          />
+        </Grid>
         <Grid item xs={12} md={6}>
           <MonthlyBarOverview
             cardTitle="Reward History"
