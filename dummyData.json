@@ -8,11 +8,11 @@
     "dateframe_co2_company": 1109.98
   },
   "HISTORY_DATA": [
-    { "year": 2021, "month": 12, "co2_saved": 560.0, "reward": 599 },
-    { "year": 2021, "month": 5, "co2_saved": 37.5, "reward": 0 },
-    { "year": 2022, "month": 1, "co2_saved": 232.0, "reward": 605 },
-    { "year": 2022, "month": 2, "co2_saved": 340, "reward": 12 },
-    { "year": 2022, "month": 3, "co2_saved": 0, "reward": 0 },
-    { "year": 2022, "month": 4, "co2_saved": 543.0, "reward": 599 }
+    { "id": 0, "year": 2021, "month": 12, "co2_saved": 560.0, "reward": 599 },
+    { "id": 1, "year": 2021, "month": 5, "co2_saved": 37.5, "reward": 0 },
+    { "id": 2, "year": 2022, "month": 1, "co2_saved": 232.0, "reward": 605 },
+    { "id": 3, "year": 2022, "month": 2, "co2_saved": 340, "reward": 12 },
+    { "id": 4, "year": 2022, "month": 3, "co2_saved": 0, "reward": 0 },
+    { "id": 5, "year": 2022, "month": 4, "co2_saved": 543.0, "reward": 599 }
   ]
 }
