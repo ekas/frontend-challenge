@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
 import { userRoutes } from './routes';
-import { darkTheme, lightTheme } from './theme';
+import { darkTheme, thirdTheme } from './theme';
 import UserView from './UserView';
 
 const useStyles = makeStyles(() => ({
@@ -28,10 +28,10 @@ const useStyles = makeStyles(() => ({
 }));
 
 const useDarkMode = (): [ThemeOptions, () => void] => {
-  const [theme, setTheme] = useState(lightTheme);
+  const [theme, setTheme] = useState(thirdTheme);
 
   const toggleTheme = (): void => {
-    setTheme(theme.palette?.mode === 'light' ? darkTheme : lightTheme);
+    setTheme(theme.palette?.mode === 'light' ? darkTheme : thirdTheme);
   };
 
   return [theme, toggleTheme];

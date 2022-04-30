@@ -94,3 +94,44 @@ export const darkTheme: ThemeOptions = {
     },
   },
 };
+
+export const thirdTheme: ThemeOptions = {
+  ...lightTheme,
+  palette: {
+    primary: {
+      light: '#BFD8BD',
+      main: '#98C9A3',
+      dark: '#77BFA3',
+      contrastText: '#fff',
+    },
+    secondary: {
+      light: '#E2E4F6',
+      main: '#797596',
+      dark: '#1C1F33',
+      contrastText: '#fff',
+    },
+    background: {
+      paper: '#fff',
+      default: '#f6f6f6',
+    },
+    mode: 'light',
+  },
+  custom: {
+    ...lightTheme.custom,
+    palette: {
+      graphColorOne: {
+        light: '#BFD8BD',
+        main: '#82AC8B',
+        dark: '#62856A',
+      },
+      graphColorTwo: {
+        light: '#E2E4F6',
+        main: '#797596',
+        dark: '#1C1F33',
+      },
+      history: {
+        summaryBorder: '#515151',
+      },
+    },
+  },
+};

@@ -14,7 +14,7 @@ const injectedText = document.createTextNode(` Budget-to-Beat: ${euroValueElemen
 element.appendChild(imgElement);
 element.appendChild(injectedText);
 
-element.style.backgroundColor = '#2156c1';
+element.style.backgroundColor = '#1C1F33';
 element.style.color = 'white';
 element.style.border = 'none';
 element.style.borderRadius = '5px';
